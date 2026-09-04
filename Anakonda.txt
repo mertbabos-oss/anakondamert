@@ -1,0 +1,252 @@
+
+-- Rayfield UI Kütüphanesini Yükleme
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- Ana Pencere Oluşturma
+local Window = Rayfield:CreateWindow({
+   Name = "🐍 AnakondaHub",
+   LoadingTitle = "AnakondaHub Yükleniyor...",
+   LoadingSubtitle = "by Anakonda Team",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = "AnakondaHubConfig",
+      FileName = "AnakondaHub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+   KeySystem = false,
+})
+
+-- --- SEKMELER (TABS) ---
+local UniversalTab = Window:CreateTab("Universal 🌐", 4483362458)
+local BloxFruitsTab = Window:CreateTab("Blox Fruits 🍎", 4483362458)
+local MM2Tab = Window:CreateTab("Murder Mystery 2 🔪", 4483362458)
+local StealEggTab = Window:CreateTab("Steal An Egg 🥚", 4483362458)
+local BladeBallTab = Window:CreateTab("Blade Ball ⚔️", 4483362458)
+local BrookhavenTab = Window:CreateTab("Brookhaven 🏡", 4483362458)
+local ForestTab = Window:CreateTab("Ormanda 99 Gece 🌲", 4483362458)
+local BasketballTab = Window:CreateTab("Basketball Legends 🏀", 4483362458)
+local FTFTab = Window:CreateTab("Flee the Facility 🏃", 4483362458)
+local MilitaryTab = Window:CreateTab("Asker Oyunu 🪖", 4483362458)
+
+-- Giriş Bildirimi
+Rayfield:Notify({
+   Title = "AnakondaHub Hazır!",
+   Content = "Scriptler başarıyla yüklendi.",
+   Duration = 4,
+   Image = 4483362458,
+})
+
+-- --- UNIVERSAL SEKMESİ ---
+UniversalTab:CreateSection("Genel Scriptler")
+
+UniversalTab:CreateButton({
+   Name = "RTX Shader Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "RTX Shader yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/WeltsHub/RTX/refs/heads/main/Shader'))()
+   end,
+})
+
+UniversalTab:CreateButton({
+   Name = "Universal Aimbot Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Aimbot yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/verund638/ArthurHub/refs/heads/main/mobileaimbot"))()
+   end,
+})
+
+UniversalTab:CreateButton({
+   Name = "Vexro Emotes Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Vexro Emotes yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://vexroscripts.com.tr/vexroemotes.luau"))()
+   end,
+})
+
+UniversalTab:CreateButton({
+   Name = "Anakonda Tekmesi Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Anakonda Tekmesi yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/platinww/CrustyMain/refs/heads/main/universal/DropKick.lua"))()
+   end,
+})
+
+UniversalTab:CreateButton({
+   Name = "Infinite Yield Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Infinite Yield yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+
+-- --- BLOX FRUITS SEKMESİ ---
+BloxFruitsTab:CreateSection("Blox Fruits Script")
+
+BloxFruitsTab:CreateButton({
+   Name = "Redz Hub Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Redz Hub yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Redz-hub-205954"))()
+   end,
+})
+
+-- --- MURDER MYSTERY 2 SEKMESİ ---
+MM2Tab:CreateSection("MM2 Script")
+
+MM2Tab:CreateButton({
+   Name = "MM2 Script Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Murder Mystery 2 scripti yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Murderer-Mystery-2-15545"))()
+   end,
+})
+
+-- --- STEAL AN EGG SEKMESİ ---
+StealEggTab:CreateSection("Steal An Egg Script")
+
+StealEggTab:CreateButton({
+   Name = "Steal An Egg (Bypass Anti-Cheat) Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Steal An Egg scripti yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Steal-An-Egg-bypass-anti-cheat-224212"))()
+   end,
+})
+
+-- --- BLADE BALL SEKMESİ ---
+BladeBallTab:CreateSection("Blade Ball Script")
+
+BladeBallTab:CreateButton({
+   Name = "Rocket Auto Parry Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Blade Ball Auto Parry yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rocket-auto-parry-Blade-ball-225734"))()
+   end,
+})
+
+-- --- BROOKHAVEN SEKMESİ ---
+BrookhavenTab:CreateSection("Brookhaven Scriptleri")
+
+BrookhavenTab:CreateButton({
+   Name = "DarkBrook Script Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "DarkBrook scripti yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Slayerzxz/DarkBrook/refs/heads/main/brookhaven.lua"))()
+   end,
+})
+
+BrookhavenTab:CreateButton({
+   Name = "Drift Scripti Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Drift scripti yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Drift-professionally-220021"))()
+   end,
+})
+
+-- --- ORMANDA 99 GECE SEKMESİ ---
+ForestTab:CreateSection("Ormanda 99 Gece Script")
+
+ForestTab:CreateButton({
+   Name = "99 Gece Script Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Ormanda 99 Gece scripti yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://pastefy.app/zXQZyEwh/raw?part=Universalscript.lua", true))()
+   end,
+})
+
+-- --- BASKETBALL LEGENDS SEKMESİ ---
+BasketballTab:CreateSection("Basketball Legends Script")
+
+BasketballTab:CreateButton({
+   Name = "Basketball Legends Script Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Basketball Legends scripti yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://pastefy.app/MG0EcNGO/raw"))()
+   end,
+})
+
+-- --- FLEE THE FACILITY SEKMESİ ---
+FTFTab:CreateSection("Flee the Facility Script")
+
+FTFTab:CreateButton({
+   Name = "Flee the Facility Script Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Flee the Facility scripti yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://vss.pandauth.com/kv/8f58d8dd6606cc9c"))()
+   end,
+})
+
+-- --- ASKER OYUNU SEKMESİ ---
+MilitaryTab:CreateSection("TSK / Asker Oyunu Script")
+
+MilitaryTab:CreateButton({
+   Name = "Sydearr Hub Çalıştır",
+   Callback = function()
+       Rayfield:Notify({
+           Title = "AnakondaHub",
+           Content = "Asker Oyunu scripti yükleniyor...",
+           Duration = 3,
+       })
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Turkish-Soldier-Game-WINTER-BTF-Turkish-Armed-Forces-Sydearr-Hub-Script-106222"))()
+   end,
+})
+
